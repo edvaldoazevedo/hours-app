@@ -1,0 +1,35 @@
+<form [formGroup]="form"> 
+    <div class="row row-center">
+        <div class="col-4">
+            <label class="col-sm-2 col-form-label">Entrada</label>
+            <input type="time"   formControlName="firstEntry"  name="firstEntry"  class="form-control" placeholder="1º Entrada" required>
+        </div>
+        <div class="col-4">
+            <label class="col-sm-2 col-form-label">Saída</label>
+            <input type="time" formControlName="secondEntry"name="secondEntry" class="form-control" placeholder="1º Saída" required>
+        </div>
+    </div>
+    <div class="row row-center">
+        <div class="col-4">
+            <input type="time"   formControlName="thirtyEntry"  name="thirtyEntry" class="form-control" placeholder="2º Entrada"required>
+        </div>
+        <div class="col-4">
+            <input type="time"  disabled  formControlName="fortyEntry"  name="fortyEntry" class="form-control" placeholder="2º Saída">
+        </div>
+    </div>
+    <div class="row row-buttons">
+        <div>
+            <button type="button"  [disabled]="form.invalid" (click) ="getHoursLeft()" class="btn btn-primary btn-calc">Calcular</button>
+        </div>
+        <div>
+            <button type="button" (click)="clean()"class="btn btn-warning">Limpar</button>
+        </div>
+    </div>
+    <div id="alert" class="alert-horas" *ngIf="showAlertHour">
+        <p>
+            <ngb-alert [dismissible]="false">
+              <strong>Alerta!</strong> {{ msgAlert }}.
+            </ngb-alert>
+          </p>
+    </div>
+</form>

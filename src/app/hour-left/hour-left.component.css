@@ -1,0 +1,31 @@
+.row-center{
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+.row-buttons{
+    margin-left: 60%;
+    margin-top: 30px;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+.buttons-calc{
+    margin-top: 15px;
+}
+
+.button-calcular{
+    margin-right: 20px;
+}
+.btn-limpar{
+    margin-left: 55px;
+
+}
+.btn-calc{
+    margin-right: 25px;
+}
+.alert-horas{
+    margin-top: 20px;
+}
