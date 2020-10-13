@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng --inspect=8080 serve",
+    "start": "ng serve --inspect=8080",
     "postinstall": "ng build --aot --prod",
     "build": "ng build",
     "test": "ng test",
